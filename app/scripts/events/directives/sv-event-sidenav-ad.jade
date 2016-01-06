@@ -1,0 +1,10 @@
+.card
+    a.tc-grey-800(ui-sref='app.events.kohl2016' ng-click="closeSideBar()")
+        .card__img.card__img--top(style='padding:0px !important')
+            img(ng-src="http://res.cloudinary.com/svet-russian-media-group/image/upload/c_scale,w_645/v1469237238/6000_KOHL_6N_CLR_YMCA_ENG_twrpc5.jpg")
+            span.mdc-display-inline-block.fs-title.tc-white.bgc-white.sv-color-8(style='padding:0px 8px;margin: 0px -15px') Kohl Children's Museum
+            span.mdc-display-inline-block.fs-title.tc-white.bgc-grey-900.sv-color-7(style='padding:0px 8px;margin: 0px -15px') Kohl Children's Museum
+        div(class='p+')
+            .fs-subhead {{eventTitle|translate}}
+            //.paragraph.fs-body-1.mb
+            //    | Photo Gallery

@@ -1,0 +1,3 @@
+div
+    div(ng-repeat="(index,cl) in allCls|clType:svRoute|orderBy:'-timestamp'")
+        sv-one-classified-thumb.mb(cl="cl" one-cl-id="id")

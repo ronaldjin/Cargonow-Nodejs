@@ -1,0 +1,18 @@
+div(layout='column')
+    span.display-block.fs-headline.mb {{event.title}}
+    div(layout-gt-sm='row' layout-sm='column')
+        div(layout-sm='column' class='mr+' flex-order-sm='2')
+            div(style='max-width:130px')
+                img.sv-filter-grey.mb(ng-src="{{event.img}}" style="max-width:100%;max-height:auto")
+        div(flex-gt-sm='70' layout='column' class="mb+ mr" flex-order-sm='1')
+            span.fs-caption.mdc-display-inline-block
+                i.fa.fa-calendar.fa-fw &nbsp
+                | {{event.startsAt|date:"short"}}
+            sv-event-widget(type='{{event.type}}' class='mt mb')
+            span.display-block.fs-subhead About Event:
+            span.display-block.fs-body-2.mb {{event.about}}
+            div
+                a.btn.btn--xs.btn--white.btn--raised(lx-ripple='' ui-sref='app.events.one-event({eid:event.svId})')
+                    i.mdi.mdi-arrow-right &nbsp
+                    | {{'more-info'|translate}}
+

@@ -1,0 +1,7 @@
+mixin classifieds-menu(sections)
+    ul.list-inline.sv-margin-reset
+        for section in sections
+            if section
+                li.sv-padding-reset
+                    a.btn.btn--xs.btn--white.bgc-grey-100.btn--raised.fs-caption(lx-ripple='' href="/classifieds/#{section}") !{section}
+

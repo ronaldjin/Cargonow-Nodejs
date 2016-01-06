@@ -1,0 +1,19 @@
+div(layout-gt-sm='row' layou-sm="column" ui-view='')
+    div(flex-gt-sm='60' )
+        sv-profile-title(header-title="Radio OCA Archive" class='ml mr mb+')
+        div(layout='row' class='mb ml mr')
+            .mr
+                sv-fb-like
+            .mr
+                sv-fb-share
+            .mr
+                sv-google-share
+        ul(layout="column" class='ml mr')
+            li.p(ng-repeat='p in programs')
+                a.display-block.fs-title.tc-grey-700(ui-sref='app.radio-archive.program({radioId:p.$id})')
+                    i.fa.i.fa.fa-youtube-square.fa-fw.tc-red-400 &nbsp
+                    | {{p.date}}
+        div(flex-gt-sm='40')
+            div(class='ml mr text-center')
+                .mt.text-center
+                    sv-from-the-editor(class='text-left')

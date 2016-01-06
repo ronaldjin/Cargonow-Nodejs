@@ -1,0 +1,14 @@
+extends layout
+include mixins/menu/classifieds-menu
+include mixins/classifieds/one-classified
+
+block content
+    div(class='p+')
+        h1 Classifieds
+    div(class='mb+')
+        if vm.sections
+            +classifieds-menu(vm.sections)
+    div(class='m')
+        if vm.cl
+            +one-classified(vm.cl)
+

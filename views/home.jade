@@ -1,0 +1,42 @@
+extends layout
+include mixins/article/top-news-article-thumb
+include mixins/article/home-page-news-thumb
+include mixins/article/article-thumb-title
+include mixins/home/blog
+
+
+block content
+    div(class='row mb pt+ sv-margin-reset')
+        div.col-xs-8.sv-padding-reset
+            .pr.mb
+                +top-news-article-thumb(vm.homeNews.mainNews)
+        div.col-xs-4.sv-padding-reset
+            div(class='column sv-margin-reset')
+                div.col-xs-12.mb.sv-padding-reset
+                    +blog(vm.homeNews.blog)
+                div.col-xs-12.mb.sv-padding-reset
+                    include editor/radio-thumb
+    div(class='row sv-margin-reset mb')
+        div.col-xs-6.mb.sv-padding-reset
+            .mr
+                +home-page-news-thumb(vm.homeNews.secondNews)
+        div.col-xs-6.mb.sv-padding-reset
+            .ml
+                +home-page-news-thumb(vm.homeNews.thirdNews)
+    if vm !== undefined
+        div(class='row sv-margin-reset')
+            div.col-xs-4.mb.sv-padding-reset
+                .mr
+                    +article-thumb-title(vm.homeNews.endorsedSvet, 'Endorsed by Svet', 'star')
+            div.col-xs-4.mb.sv-padding-reset
+                +article-thumb-title(vm.homeNews.svetOnly, 'Only on Svet','bell')
+            div.col-xs-4.mb.sv-padding-reset
+                .ml
+                    +article-thumb-title(vm.homeNews.personality, 'Personality','clipboard-account')
+    span.display-block.fs-display-1.mdc-underline-red.mt.mb.tc-grey-700(class='mb+') This Week News
+    ul.list-unstyled(class='row' style="margin-right:-5px;margin-left:-5px")
+        if vm.homeNews.ordinalArticles !== undefined
+            for article in vm.homeNews.ordinalArticles
+                li(class='col-xs-6' style="padding:5px")
+                    +home-page-news-thumb(article)
+

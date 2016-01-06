@@ -1,0 +1,37 @@
+md-content
+    md-tabs(md-border-bottom='' md-dynamic-height="" md-stretch-tabs="never")
+        md-tab(ui-sref='app.classified.general({clSection:"job"})' )
+            md-tab-label(ng-click='runMe()') {{'job'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"lookingForJob"})')
+            md-tab-label {{'lookingForJob'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"services"})')
+            md-tab-label {{'services'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"housing"})')
+            md-tab-label {{'housing'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"lessons"})')
+            md-tab-label {{'lessons'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"personal"})')
+            md-tab-label {{'personal'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"sale"})')
+            md-tab-label {{'sale'|translate}}
+            md-tab-body
+                div(ui-view='')
+        md-tab(ui-sref='app.classified.general({clSection:"community"})')
+            md-tab-label {{'community'|translate}}
+            md-tab-body
+                div(ui-view='')
+
+
+

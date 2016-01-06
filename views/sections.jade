@@ -1,0 +1,10 @@
+extends layout
+include mixins/article/article-section-thumb
+
+block content
+    div(class='p+')
+        h1= vm.title
+    ul.list-unstyled
+        for p in vm.articles
+            +article-section-thumb(p)
+

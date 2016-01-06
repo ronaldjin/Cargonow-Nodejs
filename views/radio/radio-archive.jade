@@ -1,0 +1,16 @@
+extends ../layout
+include ../mixins/radio/radio-program
+
+block content
+    div(class='p+')
+        h1 Radio OCA
+
+    if vm !== undefined && !vm.program
+        div(class='p+')
+            ul.list-unstyled
+                for prog in vm.programs
+                    li
+                        a(href="#{vm.fullUrl}/#{prog.key}") !{prog.dt}
+    if vm !== undefined && vm.program
+      +radio-program(vm.program)
+

@@ -1,0 +1,8 @@
+div(layout='column' layout-align='center center' class='mb+ ml mr sv-iframe-responsive-wrap' ng-show='ad')
+    div(ng-if='!ad.www' style='max-width:960px; position:relative;height:100%')
+        img(ng-src="{{currentAd}}" alt='{{ad.anchor || "company banner"}}'  width="100%" style='border: #757575 1px solid; max-width:960px' sv-animate-on-index-change='adIndex')
+        sv-slider-btn
+    div(ng-if='ad.www' style='max-width:960px; position:relative;height:100%')
+        a(href='{{ad.www}}' target='_blank')
+            img(ng-src="{{currentAd}}" alt='{{ad.anchor}}' width="100%" style='border: #757575 1px solid;  max-width:960px' sv-animate-on-index-change='adIndex')
+        sv-slider-btn

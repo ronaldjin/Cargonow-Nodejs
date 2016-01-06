@@ -1,0 +1,16 @@
+mixin radio-program(p)
+    div !{p.dt}
+    div
+        iframe(src='https://www.youtube.com/embed/#{p.youtube}' frameborder="0" allowfullscreen)
+    div
+        .fs-headline.ml.mr Program Sponsors:
+        ul
+            for guest in p.guests
+                li.card.p.m
+                    p
+                        div !{guest.name}
+                        div
+                            a(href='http://#{guest.webUrl}' target='_blank') !{guest.webAnkor}
+                        div !{guest.phone}
+                        div
+                            a(href='http://#{guest.webUrl}' target='_blank') !{guest.webUrl}

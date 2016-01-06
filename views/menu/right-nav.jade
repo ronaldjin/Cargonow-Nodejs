@@ -1,0 +1,27 @@
+ul.list-unstyled.pt.pr
+    li
+        if vm !== undefined
+            a.btn.btn--s.btn--red.btn--raised.bgc-red-300.m( style="width:100%" lx-ripple='' href='/about/svet-russian-media-group/')
+                i.fa.fa-info-circle.fa-fw &nbsp
+                | About Us
+    li
+        a.btn.btn--s.btn--black.btn--raised.bgc-svet-700.m( style="width:100%" lx-ripple='' href='/testimonials/')
+            i.mdi.mdi-account-star.mdi-fw &nbsp
+            | Testimonials
+    li
+        a.btn.btn--s.btn--black.btn--raised.bgc-svet-700.m( style="width:100%" lx-ripple='' href='/contact/')
+            i.fa.fa-map-marker.fa-fw &nbsp
+            | Contact Us
+
+    ul.list
+        li.list-row.list-row--has-separator(style="padding:0px 8px")
+            .list-row__primary(style="width:42px")
+                a(href="https://itunes.apple.com/us/app/svet-local/id592739995?mt=8" style='width:30px; display:inline-block')
+                    img(src="/img/ad/svet-app.png" style='width:30px; display:inline-block;opacity:.9')
+            .list-row__content
+                a.mdc-link.tc-grey-800(href="https://itunes.apple.com/us/app/svet-local/id592739995?mt=8")
+                    .fs-subhead.text-subheader Svet Local App
+    li
+        a.btn.btn--s.btn--red.btn--raised.bgc-red-300.m( style="width:100%" lx-ripple='' href="/classifieds/community")
+            i.fa.fa-bullhorn.fa-fw &nbsp
+            | Classifieds

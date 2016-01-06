@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SVET Russian Media Group, the Midwest's first and oldest publishing and advertising company </title>
+    <base href="/">
+    <meta name="fragment" content="!"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+
+    <meta name="fragment" content="!"/>
+
+    <meta name="referrer" content="origin"/>
+    <meta name="viewport" id="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <meta property="fb:app_id" content="422346614642986"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <style> [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+    }
+
+    </style>
+
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.rawgit.com/jakearchibald/es6-promise/master/dist/es6-promise.min.js"
+            type="text/javascript"></script>
+    <!-- build:css vendors.css -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css" />
+    <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" href="./bower_components/textAngular/src/textAngular.css" type="text/css"/>
+    <link rel="stylesheet" href="./bower_components/lumx/dist/lumx.css">
+    <link rel="stylesheet" href="./bower_components/angular-toastr/dist/angular-toastr.min.css"/>
+    <link rel="stylesheet" href="./bower_components/angular-socialshare/angular-socialshare.min.css"/>
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css">
+    <!-- endbuild -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href=".tmp/main.css">
+    <!-- endinject -->
+    <!--uncomment on production-->
+
+</head>
+
+
+<body ng-app="app" layout="column" flow-prevent-drop ng-cloak="" style='overflow-y: hidden'>
+<div id="fb-root"></div>
+<script>
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '422346614642986',
+            xfbml: true,
+            version: 'v2.8'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=422346614642986";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<md-content layout="column" layout-fill class='sv-paper-main-background'>
+    <md-toolbar class="sv-toolbar md-hue-3 md-primary  tc-white-1 pl" layout="row" layout-align="space-between center"
+                style="background-color:#474341">
+        <div layout="row" layout-align="center center">
+            <sv-lang-switch></sv-lang-switch>
+            <!--<sv-weather-svet class="weather-widget"></sv-weather-svet>-->
+        </div>
+        <sv-test-repo-informer></sv-test-repo-informer>
+        <div layout="row" layout-align="end end">
+            <div layout="row" layout-align="end end" hide-md hide-sm>
+                <div class="fb-like" data-href="http://www.svet.com/"
+                     data-layout="button_count" data-action="like" data-size="small" data-show-faces="false"
+                     data-share="true"></div>
+                <div class="m"></div>
+                <!--<div class="fb-like" data-href="http://www.svet.com/" data-action="like"-->
+                <!--data-layout="button_count"></div>-->
+                <!--<div class="m"></div>-->
+                <div gplus=""
+                     class="g-plus" data-size="medium"
+                     data-annotation="bubble"
+                     gplus=''
+                     data-href='http://www.svet.com'
+                     data-action='share'>
+                </div>
+            </div>
+            <sv-social-top-nav hide-md hide-sm></sv-social-top-nav>
+            <sv-social-top-nav-cell hide-gt-md></sv-social-top-nav-cell>
+        </div>
+    </md-toolbar>
+    <md-content layout="row" layout-fill flex>
+        <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
+                    md-is-locked-open="$mdMedia('gt-md')">
+            <md-toolbar class="md-hue-1 text-center" layout='row' sv-nav-bar-media layout-align='space-around center'>
+                <!--<span class="mdc-subhead" hide-sm hide-gt-sm show-gt-md>Наши новости</span>-->
+                <sv-home-logo-link></sv-home-logo-link>
+                <button class='btn btn--m btn--icon btn--black mr' sv-left-click-handler="" hide-gt-md=""
+                        aria-label="close left" class="txt-white sv-md-button">
+                    <i class="mdi mdi-close"></i>
+                </button>
+            </md-toolbar>
+            <md-content layout-padding flex class='sv-paper-main-background'>
+                <sv-news-sections-nav class="mb"></sv-news-sections-nav>
+                <!--<sv-sidenav-title title="Svet family event" class="mb"></sv-sidenav-title>-->
+                <!--<sv-event-sidenav-ad event-title="event-ad-title" body="event-ad-body"></sv-event-sidenav-ad>-->
+                <div class='mt+'></div>
+                <sv-nav-btn url="app.section({sectionName:'svet-recommends'})"
+                            icon-type="fa"
+                            title="{{'svet-recommends'|translate}}"
+                            icon="compass"
+                            txt-color="white-1"
+                            bgc="red-900"
+                            custom-class="sv-color-8"
+                            color="red" btn-size="l" class="mb"></sv-nav-btn>
+                <sv-nav-btn url="app.events.calendar"
+                            icon-type="fa"
+                            title="events-calendar"
+                            color="white"
+                            txt-color="grey-200"
+                            custom-class="bgc-svet-700"
+                            icon="calendar"
+                            btn-size="l"
+                            class="mb"></sv-nav-btn>
+                <sv-nav-btn url="app.blogs"
+                            icon-type="mdi"
+                            title="svet-blog"
+                            color="white"
+                            txt-color="grey-200"
+                            custom-class="bgc-svet-700"
+                            icon="blogger"
+                            btn-size="l"
+                            class="mb"></sv-nav-btn>
+                <sv-nav-btn url="app.radio-archive"
+                            icon-type="mdi"
+                            title="radio archive"
+                            color="white"
+                            txt-color="grey-200"
+                            custom-class="bgc-svet-700"
+                            icon="radio"
+                            btn-size="l"
+                            class="mb"></sv-nav-btn>
+            </md-content>
+        </md-sidenav>
+
+        <!--layout fill in this case stretches main content horizontally not to get gap on the left-->
+        <md-content layout="column" layout-fill>
+            <!--Top Toolbar-->
+            <md-toolbar layout="row" class="md-hue-1" sv-nav-bar-media style='padding:0px 4px'
+                        layout-align="center center">
+                <button class='btn btn--xl btn--icon'
+                        style="width:36px"
+                        hide-gt-md sv-left-click-handler="" aria-label="Show User List">
+                    <md-icon md-svg-icon="sv-menu"></md-icon>
+                </button>
+                <!--<span flex ng-if="main.showShifter"></span>-->
+                <!--<sv-header-classified-btn></sv-header-classified-btn>-->
+                <sv-demographics-header-btn></sv-demographics-header-btn>
+                <sv-header-radio-btn></sv-header-radio-btn>
+                <!--<sv-header-subscription-btn hide-sm></sv-header-subscription-btn>-->
+                <!--<span flex></span>-->
+                <div class='md-whiteframe-z1 p' hide-sm hide-gt-sm hide-md show-gt-md>
+                    <sv-classified-header-phone></sv-classified-header-phone>
+                </div>
+                <span flex></span>
+                <sv-profile-type class='mr'></sv-profile-type>
+                <sv-auth-btn class="mr"></sv-auth-btn>
+                <sv-notifications-list style='max-height:30px'></sv-notifications-list>
+                <div show-gt-lg class="ml"></div>
+                <button class='btn btn--xl btn--icon'
+                        style="width:36px"
+                        lx-ripple=""
+                        sv-right-click-handler=""
+                        hide-gt-lg
+                        aria-label="Show Panel">
+                    <md-icon md-svg-icon="img/svg/dots-vertical.svg"></md-icon>
+                </button>
+            </md-toolbar>
+            <!--flex in this case stretches right sidenav vertically-->
+            <md-content layout="row" flex>
+                <!-- =VIEWS CONTENT-->
+                <!-- layout-fill prevents horizontal jumping on page load-->
+                <md-content layout-fill class='sv-paper-main-background'>
+                    <div layout-gt-sm='row' layout-align="top" class='ml mr mt text-center'>
+                    </div>
+                    <div class="pl pr" layout="column" ng-if="radioShow ">
+                        <div layout-gt-sm='row' layout-align="top" class='ml mr'>
+                            <div flex-gt-sm='66'>
+                                <sv-top-news news='news' class='mb ml mr mt+'></sv-top-news>
+                            </div>
+                            <div flex-gt-sm='33'>
+                                <div class="mt+ text-center">
+                                    <sv-from-the-editor class="text-left"></sv-from-the-editor>
+                                    <sv-radio-osa></sv-radio-osa>
+                                </div>
+                            </div>
+                        </div>
+                        <sv-home-banner place='home.middle'></sv-home-banner>
+                        <sv-second-news lower-limit='2' higher-limit='3' news='news' class=''></sv-second-news>
+
+                        <div layout-gt-sm="row" layout-sm="column">
+                            <div flex="">
+                                <sv-article-thumb-title class="ml mr mb+"
+                                                        icon-type="fa"
+                                                        section-icon="fa-compass"
+                                                        section-title="svet-recommends"
+                                                        bgc="bgc-svet-700" tc="tc-grey-50"
+                                                        tags='chicago children endorsed'></sv-article-thumb-title>
+                            </div>
+                            <div flex="">
+                                <sv-article-thumb-title class="ml mr mb+" section-title="only-on-svet"
+                                                        icon-type="mdi"
+                                                        section-icon="mdi-star"
+                                                        bgc="bgc-svet-700" tc="tc-grey-50"
+                                                        tags='svet'></sv-article-thumb-title>
+                            </div>
+                            <div flex="">
+                                <sv-article-thumb-title class="ml mr mb+" section-title="personality"
+                                                        icon-type="mdi"
+                                                        section-icon="mdi-account-star"
+                                                        bgc="bgc-svet-700" tc="tc-grey-50"
+                                                        tags='personality'></sv-article-thumb-title>
+                            </div>
+                        </div>
+
+                        <sv-news-grid news='news' exclude='3' class='mb+' without-section="sport"
+                                      ng-if="news.length>3"></sv-news-grid>
+
+                        <sv-news-grid news='news' exclude='3' class='mb+' filter-section="sport"
+                                      ng-if="news.length>3"></sv-news-grid>
+                    </div>
+
+                    <div ui-view="" flex ng-if="!radioShow"></div>
+                </md-content>
+                <!-- =VIEWS CONTENT ENDS-->
+                <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-z2" md-component-id="right"
+                            md-is-locked-open="$mdMedia('gt-lg')">
+                    <md-toolbar class="text-center bgc-grey-200" sv-nav-bar-media layout-padding="" layout='row'
+                                hide-gt-lg
+                                layout-align='start center'>
+                        <button lx-ripple class='btn btn--m btn--icon btn--black' sv-right-click-handler=""
+                                class='tc-grey-400'
+                                hide-gt-lg=""
+                                style='cursor:pointer'
+                                aria-label="close right" class="txt-white">
+                            <i class="mdi mdi-close"></i>
+                        </button>
+                        <span class="mdc-display-inline-block mdc-subhead ml">{{'for-readers-and-partners'|translate}}</span>
+                    </md-toolbar>
+                    <!--if your sidenav background has color, add flex to fill sidenav vertically-->
+                    <md-content class="pt" flex class='sv-paper-main-background'>
+                        <div class="mr ml">
+                            <sv-sidenav-title title="why svet media group?"></sv-sidenav-title>
+
+                            <sv-nav-btn url="app.about.about-tab-content"
+                                        icon-type="fa"
+                                        icon="info-circle" custom-style="font-weight:500"
+                                        custom-class="sv-color-8"
+                                        title="about us"
+                                        bgc="red-900"
+                                        color="red"
+                                        btn-size="l"
+                                        class="mb">
+                            </sv-nav-btn>
+                            <sv-nav-btn url="app.testimonials"
+                                        icon-type="mdi"
+                                        icon="account-star"
+                                        custom-style="font-weight:500"
+                                        title="Testimonials"
+                                        custom-class="bgc-svet-700"
+                                        color="black"
+                                        btn-size="l"
+                                        class="mb">
+                            </sv-nav-btn>
+                            <sv-nav-btn url="app.contact"
+                                        icon-type="fa"
+                                        icon="map-marker"
+                                        custom-style="font-weight:500"
+                                        title="Contact us"
+                                        custom-class="bgc-svet-700"
+                                        color="black"
+                                        btn-size="l"
+                                        class="mb">
+                            </sv-nav-btn>
+                            <sv-svet-social></sv-svet-social>
+                            <sv-nav-btn url="app.classified.general({clSection:'job'})"
+                                        icon-type="fa"
+                                        icon="bullhorn"
+                                        title="classifieds"
+                                        bgc="red-900"
+                                        custom-class="sv-color-8"
+                                        custom-style="font-weight:600"
+                                        color="red" btn-size="m"
+                                        class="mb++">
+                            </sv-nav-btn>
+                            <sv-sidenav-title title="new-classified" icon-type="mdi"
+                                              icon-name="mdi-clock-fast">
+                            </sv-sidenav-title>
+                        </div>
+                        <sv-classified-widget is-home="true"></sv-classified-widget>
+
+                        <div class='text-center'>
+                            <div class="fb-page" data-href="https://www.facebook.com/svetmedia"
+                                 data-small-header="true"
+                                 data-width="260"
+                                 data-adapt-container-width="true"
+                                 data-hide-cover="false"
+                                 data-show-facepile="true"
+                                 data-show-posts="false">
+                                <div class="fb-xfbml-parse-ignore">
+                                    <blockquote cite="https://www.facebook.com/svetmedia"><a
+                                            href="https://www.facebook.com/svetmedia">Svet Russian Media</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </md-content>
+                    <!--<div layout="row" layout-align="bottom center">-->
+                    <!--Google-->
+                    <!--</div>-->
+                </md-sidenav>
+            </md-content>
+        </md-content>
+    </md-content>
+
+</md-content>
+<!-- build:js lib.js -->
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+<script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
+<script src="bower_components/angular-capitalize-filter/capitalize.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-socialshare/angular-socialshare.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-underscore-string/angular-underscore-string.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<script src="bower_components/jssor-slider/js/jssor.slider.mini.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/velocity/velocity.js"></script>
+<script src="bower_components/velocity/velocity.ui.js"></script>
+<script src="bower_components/lumx/dist/lumx.js"></script>
+<script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
+<script src="bower_components/ng-clip/src/ngClip.js"></script>
+<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+<script src="bower_components/flow.js/dist/flow.js"></script>
+<script src="bower_components/ng-flow/dist/ng-flow.js"></script>
+<script src="bower_components/underscore.string/dist/underscore.string.js"></script>
+<!-- endbower -->
+
+<script src="./bower_components/textAngular/dist/textAngular-rangy.min.js"></script>
+<script src="./bower_components/textAngular/dist/textAngular-sanitize.js"></script>
+<script src="./bower_components/textAngular/dist/textAngularSetup.js"></script>
+<script src="./bower_components/textAngular/dist/textAngular.js"></script>
+<!-- endbuild -->
+<!-- start defaults -->
+
+<!-- build:js app.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/routes.js"></script>
+<script src="scripts/sections/home/homeRoutes.js"></script>
+<!-- MODULES-->
+
+<!-- ad -->
+<script src="scripts/ad/adRoutes.js"></script>
+<script src="scripts/ad/ad-translation.js"></script>
+<script src="scripts/ad/controllers/AdCtrl.js"></script>
+
+<!-- blogs -->
+<script src="scripts/blogs/blogsRoutes.js"></script>
+<script src="scripts/blogs/blogs-translation.js"></script>
+<script src="scripts/blogs/controllers/OneBlogCtrl.js"></script>
+<script src="scripts/blogs/controllers/AllBlogsCtrl.js"></script>
+<script src="scripts/blogs/directives/sv-blogs-list.js"></script>
+<script src="scripts/blogs/services/BlogsServ.js"></script>
+
+<!-- common -->
+<script src="scripts/common/commonRoutes.js"></script>
+<script src="scripts/common/directives/sv-home-logo-link.js"></script>
+<script src="scripts/common/directives/sv-google-share.js"></script>
+<script src="scripts/common/directives/sv-fade-in.js"></script>
+<script src="scripts/common/services/AWSServ.js"></script>
+<script src="scripts/common/directives/sv-img-framed-string.js"></script>
+<script src="scripts/common/controllers/GaCtrl.js"></script>
+<script src="scripts/common/directives/sv-analytics-info.js"></script>
+<script src="scripts/common/directives/sv-image-thumb.js"></script>
+<script src="scripts/common/directives/sv-contact-info.js"></script>
+<script src="scripts/common/common-translation.js"></script>
+<script src="scripts/common/controllers/SectionCtrl.js"></script>
+<script src="scripts/common/directives/sv-fb-like.js"></script>
+<script src="scripts/common/directives/sv-fb-share.js"></script>
+<script src="scripts/common/directives/sv-fb-follow.js"></script>
+<script src="scripts/common/directives/sv-image-scale.js"></script>
+<script src="scripts/common/directives/sv-one-photo-gallery.js"></script>
+<script src="scripts/common/directives/sv-kohl-event-report.js"></script>
+<script src="scripts/common/directives/sv-animate-on-index-change.js"></script>
+<script src="scripts/common/directives/sv-test-repo-informer.js"></script>
+<script src="scripts/common/directives/sv-img-background.js"></script>
+<script src="scripts/common/services/ImageValidationServ.js"></script>
+<script src="scripts/common/directives/sv-ban-btn.js"></script>
+<script src="scripts/common/directives/sv-status-label.js"></script>
+<script src="scripts/common/directives/sv-quick-look-btn.js"></script>
+<script src="scripts/common/directives/sv-zero-length-notice.js"></script>
+<script src="scripts/common/directives/sv-confirm-deletion.js"></script>
+<script src="scripts/common/directives/sv-confirm-ban.js"></script>
+<script src="scripts/common/directives/sv-form-val.js"></script>
+<script src="scripts/common/directives/sv-svet-label.js"></script>
+<script src="scripts/common/directives/sv-gofundme-thumb.js"></script>
+<script src="scripts/common/directives/sv-share-btn.js"></script>
+<script src="scripts/common/directives/sv-star-rating.js"></script>
+<script src="scripts/common/directives/sv-lumx-users-dropdown.js"></script>
+<script src="scripts/common/directives/sv-lumx-button.js"></script>
+<script src="scripts/common/directives/sv-link-back.js"></script>
+<script src="scripts/common/services/HtmlParseServ.js"></script>
+<script src="scripts/common/services/TagsServ.js"></script>
+<script src="scripts/common/services/FormattedDateServ.js"></script>
+<script src="scripts/common/services/NewsGeneratorServ.js"></script>
+<script src="scripts/common/filters/sectionNews.js"></script>
+<script src="scripts/common/directives/sv-bottom-sheet-handler.js"></script>
+<script src="scripts/common/directives/sv-nav-btn.js"></script>
+<script src="scripts/common/directives/sv-nav-link.js"></script>
+<script src="scripts/common/directives/sv-profile-subhead.js"></script>
+<script src="scripts/common/directives/sv-profile-title.js"></script>
+<script src="scripts/common/directives/sv-tab-swipe.js"></script>
+<script src="scripts/common/directives/sv-nav-bar-media.js"></script>
+<script src="scripts/common/directives/sv-loader.js"></script>
+<script src="scripts/common/directives/sv-read-more.js"></script>
+<script src="scripts/common/services/TrailingSlashServ.js"></script>
+<script src="scripts/common/directives/sv-sidenav-title.js"></script>
+<script src="scripts/common/directives/sv-img-framed.js"></script>
+<script src="scripts/common/directives/sv-left-click-handler.js"></script>
+<script src="scripts/common/directives/sv-right-click-handler.js"></script>
+<script src="scripts/common/settings/colors.js"></script>
+<script src="scripts/common/settings/icons.js"></script>
+<script src="scripts/common/settings/constants.js"></script>
+<script src="scripts/common/services/ImageSizeServ.js"></script>
+<script src="scripts/common/directives/sv-modal-window-size-media.js"></script>
+
+
+<!-- auth -->
+<script src="scripts/auth/authRoutes.js"></script>
+<script src="scripts/auth/auth-translation.js"></script>
+<script src="scripts/auth/controllers/SignUpCtrl.js"></script>
+<script src="scripts/auth/controllers/SvetLoginCtrl.js"></script>
+<script src="scripts/auth/controllers/CustomerClassifiedCtrl.js"></script>
+<script src="scripts/auth/directives/sv-profile-type.js"></script>
+<script src="scripts/auth/directives/sv-unique-username.js"></script>
+<script src="scripts/auth/directives/sv-request-business-account-btn.js"></script>
+<script src="scripts/auth/directives/sv-pdf-subscription.js"></script>
+<script src="scripts/auth/directives/sv-social-provider.js"></script>
+<script src="scripts/auth/directives/sv-form-social-buttons.js"></script>
+<script src="scripts/auth/directives/sv-sign-up-form.js"></script>
+<script src="scripts/auth/directives/sv-login-form.js"></script>
+<script src="scripts/auth/directives/sv-auth-btn.js"></script>
+<script src="scripts/auth/directives/sv-forgot-pass.js"></script>
+<script src="scripts/auth/services/ProfileLiveServ.js"></script>
+<script src="scripts/auth/services/AuthenticationServ.js"></script>
+<script src="scripts/auth/services/AgentServ.js"></script>
+<script src="scripts/auth/services/UserUniqueServ.js"></script>
+<script src="scripts/auth/services/RequestServ.js"></script>
+<script src="scripts/auth/services/ProfileServ.js"></script>
+<script src="scripts/auth/services/ProfileExtentionServ.js"></script>
+<script src="scripts/auth/filters/Groups.js"></script>
+
+<!-- auth.user -->
+<script src="scripts/auth/user/userRoutes.js"></script>
+<script src="scripts/auth/user/controllers/UserNewsCtrl.js"></script>
+<script src="scripts/auth/user/controllers/AuthorBlogsCtrl.js"></script>
+<script src="scripts/auth/user/directives/sv-change-password.js"></script>
+<script src="scripts/auth/user/controllers/AuthorArticlesCtrl.js"></script>
+<script src="scripts/auth/user/controllers/AuthorDraftsCtrl.js"></script>
+<script src="scripts/auth/user/controllers/UserCtrl.js"></script>
+<script src="scripts/auth/user/controllers/UserDashboardCtrl.js"></script>
+<script src="scripts/auth/user/controllers/UserSocialCtrl.js"></script>
+<script src="scripts/auth/user/controllers/ProfileSettingsCtrl.js"></script>
+<script src="scripts/auth/user/directives/sv-user-social-tabs.js"></script>
+<script src="scripts/auth/user/directives/sv-user-dropdown-menu.js"></script>
+<script src="scripts/auth/user/directives/sv-user-ad-tabs.js"></script>
+<script src="scripts/auth/user/directives/sv-users-list.js"></script>
+<script src="scripts/auth/user/directives/sv-business-account-requests.js"></script>
+<script src="scripts/auth/user/directives/sv-user-personal-info.js"></script>
+<script src="scripts/auth/user/directives/sv-user-profile-summary.js"></script>
+<script src="scripts/auth/user/directives/sv-user-dashboard-tabs.js"></script>
+<script src="scripts/auth/user/directives/sv-author-articles-tabs.js"></script>
+<script src="scripts/auth/user/directives/sv-user-profile-nav.js"></script>
+
+<!-- auth.manager -->
+<script src="scripts/auth/manager/managerRoutes.js"></script>
+<script src="scripts/auth/manager/controllers/ManagerCtrl.js"></script>
+<script src="scripts/auth/manager/controllers/ManagerDashboardCtrl.js"></script>
+<script src="scripts/auth/manager/controllers/ManagerUsersCtrl.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-dashboard-tabs.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-dropdown.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-profile-nav.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-profile-summary.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-users-tabs.js"></script>
+<script src="scripts/auth/manager/directives/sv-afisha-events-tabs.js"></script>
+<script src="scripts/auth/manager/directives/sv-manager-business-ad-list.js"></script>
+<script src="scripts/auth/manager/services/UsersServ.js"></script>
+
+<!-- auth.notifications -->
+<script src="scripts/auth/notifications/notificationsRoutes.js"></script>
+<script src="scripts/auth/notifications/services/TestMeToServ.js"></script>
+<script src="scripts/auth/notifications/filters/toArray.js"></script>
+<script src="scripts/auth/notifications/directives/sv-notice-icon.js"></script>
+<script src="scripts/auth/notifications/directives/sv-notifications-list.js"></script>
+<script src="scripts/auth/notifications/directives/sv-drop-align.js"></script>
+<script src="scripts/auth/notifications/services/NotificationsServ.js"></script>
+
+
+<!-- ad.classified -->
+<script src="scripts/ad/classified/classifiedRoutes.js"></script>
+<script src="scripts/ad/classified/classified-translation.js"></script>
+<script src="scripts/ad/classified/controllers/ClassifiedCtrl.js"></script>
+<script src="scripts/ad/classified/controllers/OneClassifiedCtrl.js"></script>
+<script src="scripts/ad/classified/directives/sv-header-classified-btn.js"></script>
+<script src="scripts/ad/classified/directives/sv-classified-field.js"></script>
+<script src="scripts/ad/classified/directives/sv-one-classified.js"></script>
+<script src="scripts/ad/classified/directives/sv-one-classified-thumb.js"></script>
+<script src="scripts/ad/classified/directives/sv-user-classified-section.js"></script>
+<script src="scripts/ad/classified/directives/sv-add-classified-btn.js"></script>
+<script src="scripts/ad/classified/directives/sv-classified-bonus.js"></script>
+<script src="scripts/ad/classified/directives/sv-classified-tabs.js"></script>
+<script src="scripts/ad/classified/directives/sv-classified-widget.js"></script>
+<script src="scripts/ad/classified/directives/sv-add-classified-form.js"></script>
+<script src="scripts/ad/classified/directives/sv-animate-on-change.js"></script>
+<script src="scripts/ad/classified/services/TimeLeftServ.js"></script>
+<script src="scripts/ad/classified/filters/userCls.js"></script>
+<script src="scripts/ad/classified/filters/clType.js"></script>
+<script src="scripts/ad/classified/filters/isNewCl.js"></script>
+<script src="scripts/ad/classified/filters/isNew.js"></script>
+<script src="scripts/ad/classified/services/ClassifiedServ.js"></script>
+
+<!-- ad.promotion -->
+<script src="scripts/ad/promotion/promotionRoutes.js"></script>
+<script src="scripts/ad/promotion/directives/sv-slider-btn.js"></script>
+<script src="scripts/ad/promotion/directives/sv-shakou-ad.js"></script>
+<script src="scripts/ad/promotion/directives/sv-ad-banner-upload.js"></script>
+<script src="scripts/ad/promotion/directives/sv-s3-upload.js"></script>
+<script src="scripts/ad/promotion/directives/sv-customer-avatar.js"></script>
+<script src="scripts/ad/promotion/directives/sv-customers-dropdown.js"></script>
+<script src="scripts/ad/promotion/promotion-translation.js"></script>
+<script src="scripts/ad/promotion/controllers/NewPromotionByManagerCtrl.js"></script>
+<script src="scripts/ad/promotion/controllers/CustomerAdCtrl.js"></script>
+<script src="scripts/ad/promotion/controllers/ManagerAdCtrl.js"></script>
+<script src="scripts/ad/promotion/controllers/StartCampaignCtrl.js"></script>
+<script src="scripts/ad/promotion/directives/sv-one-campaign-thumb.js"></script>
+<script src="scripts/ad/promotion/directives/sv-banner.js"></script>
+<script src="scripts/ad/promotion/directives/sv-custom-paper-head-ad.js"></script>
+<script src="scripts/ad/promotion/directives/sv-home-banner.js"></script>
+<script src="scripts/ad/promotion/directives/sv-start-campaign-form.js"></script>
+<script src="scripts/ad/promotion/directives/sv-business-ad.js"></script>
+<script src="scripts/ad/promotion/services/AdServ.js"></script>
+<script src="scripts/ad/promotion/filters/userList.js"></script>
+
+
+<!-- article -->
+<script src="scripts/article/articleRoutes.js"></script>
+<script src="scripts/article/services/AwsImagesSwitcherServ.js"></script>
+<script src="scripts/article/directives/sv-one-comment.js"></script>
+<script src="scripts/article/services/CommentsServ.js"></script>
+<script src="scripts/article/controllers/HomepageRankCtrl.js"></script>
+<script src="scripts/article/controllers/CreateArticleCtrl.js"></script>
+<script src="scripts/article/controllers/SvetRecommendsCtrl.js"></script>
+<script src="scripts/article/controllers/ArticleCtrl.js"></script>
+<script src="scripts/article/directives/sv-article-make-top-btn.js"></script>
+<script src="scripts/article/directives/sv-tag-selector.js"></script>
+<script src="scripts/article/directives/sv-html-cleaner.js"></script>
+<script src="scripts/article/directives/sv-read-file.js"></script>
+<script src="scripts/article/directives/sv-read-txt.js"></script>
+<script src="scripts/article/directives/sv-author-humanize.js"></script>
+<script src="scripts/article/directives/sv-url-decode.js"></script>
+<script src="scripts/article/directives/sv-editor-articles-tabs.js"></script>
+<script src="scripts/article/directives/sv-section-articles-list.js"></script>
+<script src="scripts/article/directives/sv-article-thumb-title.js"></script>
+<script src="scripts/article/directives/sv-delete-article-btn.js"></script>
+<script src="scripts/article/directives/sv-image-include.js"></script>
+<script src="scripts/article/directives/sv-home-page-news.js"></script>
+<script src="scripts/article/directives/sv-main-news-status.js"></script>
+<script src="scripts/article/directives/sv-one-article-menu.js"></script>
+<script src="scripts/article/directives/sv-editor-article-home-thumb.js"></script>
+<script src="scripts/article/directives/sv-edit-article-btn.js"></script>
+<script src="scripts/article/directives/sv-author-article-link.js"></script>
+<script src="scripts/article/directives/sv-one-article-link.js"></script>
+<script src="scripts/article/directives/sv-article-status.js"></script>
+<script src="scripts/article/directives/sv-article-public-statistics.js"></script>
+<script src="scripts/article/directives/sv-image-search.js"></script>
+<script src="scripts/article/directives/sv-svet-pad.js"></script>
+<script src="scripts/article/article-translation.js"></script>
+<script src="scripts/article/directives/sv-create-article-btn.js"></script>
+<script src="scripts/article/directives/sv-add-comment.js"></script>
+<script src="scripts/article/directives/sv-image-upload.js"></script>
+<script src="scripts/article/directives/sv-new-article-form.js"></script>
+<script src="scripts/article/directives/sv-one-article.js"></script>
+<script src="scripts/article/filters/articleBlogFr.js"></script>
+<script src="scripts/article/filters/authorFr.js"></script>
+<script src="scripts/article/filters/Length.js"></script>
+<script src="scripts/article/filters/authorNameFr.js"></script>
+<script src="scripts/article/filters/cut.js"></script>
+<script src="scripts/article/filters/tagsFr.js"></script>
+<script src="scripts/article/filters/urlDecoderFr.js"></script>
+<script src="scripts/article/filters/articlePublic.js"></script>
+<script src="scripts/article/services/SvHtmlValidatorServ.js"></script>
+<script src="scripts/article/services/ImageSearchServ.js"></script>
+<script src="scripts/article/services/NewsTimeSelectorServ.js"></script>
+<script src="scripts/article/services/ArticlesServ.js"></script>
+<script src="scripts/article/services/BlogServ.js"></script>
+<script src="scripts/article/services/SvobodaSaveToDbServ.js"></script>
+<script src="scripts/article/services/ArticleProcessServ.js"></script>
+<script src="scripts/article/services/SectionsServ.js"></script>
+
+<!-- events -->
+<script src="scripts/events/eventsRoutes.js"></script>
+<script src="scripts/events/controllers/One-event-galleryCtrl.js"></script>
+<script src="scripts/events/events-translation.js"></script>
+<script src="scripts/events/directives/sv-one-event-article.js"></script>
+<script src="scripts/events/controllers/Event-articleCtrl.js"></script>
+<script src="scripts/events/controllers/Kohl2015Ctrl.js"></script>
+<script src="scripts/events/controllers/Kohl2016Ctrl.js"></script>
+<script src="scripts/events/controllers/OneEventCtrl.js"></script>
+<script src="scripts/events/controllers/CreateSvetEventCtrl.js"></script>
+<script src="scripts/events/controllers/EventCalendarCtrl.js"></script>
+<script src="scripts/events/controllers/EventsPhotoGalleryCtrl.js"></script>
+<script src="scripts/events/controllers/EventsCtrl.js"></script>
+<script src="scripts/events/controllers/FieldEventCtrl.js"></script>
+<script src="scripts/events/controllers/RaviniaEventCtrl.js"></script>
+<script src="scripts/events/directives/sv-event-widget.js"></script>
+<script src="scripts/events/directives/sv-event-type.js"></script>
+<script src="scripts/events/directives/sv-one-event-thumb.js"></script>
+<script src="scripts/events/directives/sv-one-event.js"></script>
+<script src="scripts/events/directives/sv-new-afisha-event-form.js"></script>
+<script src="scripts/events/directives/sv-svet-events-calendar.js"></script>
+<script src="scripts/events/directives/sv-event-btn.js"></script>
+<script src="scripts/events/directives/sv-event-families.js"></script>
+<script src="scripts/events/directives/sv-events-list.js"></script>
+<script src="scripts/events/directives/sv-events-nav.js"></script>
+<script src="scripts/events/directives/sv-event-sidenav-ad.js"></script>
+<script src="scripts/events/directives/sv-event-sidenav-ad-2015.js"></script>
+<script src="scripts/events/directives/sv-join-btn.js"></script>
+<script src="scripts/events/directives/sv-slide-show.js"></script>
+<script src="scripts/events/directives/sv-kohl-event2014.js"></script>
+<script src="scripts/events/directives/sv-kohl-event2015.js"></script>
+<script src="scripts/events/directives/sv-ravinia-event.js"></script>
+<script src="scripts/events/directives/sv-event-article-thumb-ru.js"></script>
+<script src="scripts/events/directives/sv-event-article-thumb-en.js"></script>
+<script src="scripts/events/filters/previosFutureFr.js"></script>
+<script src="scripts/events/filters/noticeStatus.js"></script>
+<script src="scripts/events/filters/eventsInvitation.js"></script>
+<script src="scripts/events/filters/eventsType.js"></script>
+<script src="scripts/events/services/EventServ.js"></script>
+<script src="scripts/events/services/ConnectionEventServ.js"></script>
+
+
+<!-- sections.archive -->
+<script src="scripts/sections/archive/archiveRoutes.js"></script>
+<script src="scripts/sections/archive/controllers/SvetNewspaperCtrl.js"></script>
+<script src="scripts/sections/archive/directives/sv-nav-pdf-thumb.js"></script>
+<script src="scripts/sections/archive/directives/sv-pdf-newspaper-thumb.js"></script>
+<script src="scripts/sections/archive/directives/sv-pdf-issues.js"></script>
+<script src="scripts/sections/archive/services/PdfSubscriptionsServ.js"></script>
+
+<!-- sections.about -->
+<script src="scripts/sections/about/aboutRoutes.js"></script>
+<script src="scripts/sections/about/controllers/AboutCtrl.js"></script>
+<script src="scripts/sections/about/controllers/DemographicsTabContentCtrl.js"></script>
+<script src="scripts/sections/about/controllers/AboutTabContentCtrl.js"></script>
+<script src="scripts/sections/about/controllers/GoogleAnalyticsCtrl.js"></script>
+<script src="scripts/sections/about/directives/sv-about-tabs.js"></script>
+<script src="scripts/sections/about/about-translation.js"></script>
+<script src="scripts/sections/about/directives/sv-about-svet.js"></script>
+<script src="scripts/sections/about/directives/sv-top-ru-speaking.js"></script>
+
+<!-- sections.demographics -->
+<script src="scripts/sections/demographics/demographicsRoutes.js"></script>
+<script src="scripts/sections/demographics/directives/sv-open-dialog-btn.js"></script>
+<script src="scripts/sections/demographics/directives/sv-ru-attractive-market.js"></script>
+<script src="scripts/sections/demographics/directives/sv-top-ru-states.js"></script>
+<script src="scripts/sections/demographics/directives/sv-ru-demographics.js"></script>
+<script src="scripts/sections/demographics/directives/sv-demographics-tabs.js"></script>
+<script src="scripts/sections/demographics/demographics-translation.js"></script>
+<script src="scripts/sections/demographics/directives/sv-demographics-header-btn.js"></script>
+
+<!-- sections.testimonials -->
+<script src="scripts/sections/testimonials/testimonialsRoutes.js"></script>
+<script src="scripts/sections/testimonials/directives/sv-one-feedback.js"></script>
+<script src="scripts/sections/testimonials/directives/sv-feedback-list.js"></script>
+<script src="scripts/sections/testimonials/services/FeedbackServ.js"></script>
+<script src="scripts/sections/testimonials/directives/sv-add-feedback.js"></script>
+<script src="scripts/sections/testimonials/directives/sv-one-client-link.js"></script>
+<script src="scripts/sections/testimonials/testimonials-translation.js"></script>
+<script src="scripts/sections/testimonials/controllers/TestimonialsCtrl.js"></script>
+
+<!-- sections.contact -->
+<script src="scripts/sections/contact/contactRoutes.js"></script>
+<script src="scripts/sections/contact/directives/sv-contact-us.js"></script>
+<script src="scripts/sections/contact/contact-translation.js"></script>
+<script src="scripts/sections/contact/controllers/ContactCtrl.js"></script>
+<script src="scripts/sections/contact/controllers/GetSvobodaNewsCtrl.js"></script>
+
+<!-- sections.header-->
+<script src="scripts/sections/header/headerRoutes.js"></script>
+<script src="scripts/sections/header/header-translation.js"></script>
+<script src="scripts/sections/header/directives/sv-header-subscription-btn.js"></script>
+<script src="scripts/sections/header/directives/sv-social-top-nav-cell.js"></script>
+<script src="scripts/sections/header/directives/sv-lang-switch.js"></script>
+<script src="scripts/sections/header/directives/sv-social-top-nav.js"></script>
+
+<!-- sections.home -->
+<script src="scripts/sections/home/home-translation.js"></script>
+<script src="scripts/sections/home/controllers/HomeCtrl.js"></script>
+<script src="scripts/sections/home/controllers/AppCtrl.js"></script>
+<script src="scripts/sections/home/directives/sv-top-news.js"></script>
+<script src="scripts/sections/home/directives/sv-from-the-editor.js"></script>
+<script src="scripts/sections/home/directives/sv-section-news.js"></script>
+<script src="scripts/sections/home/directives/sv-news-grid.js"></script>
+<script src="scripts/sections/home/directives/sv-second-news.js"></script>
+<script src="scripts/sections/home/directives/sv-section-select-handler.js"></script>
+<script src="scripts/sections/home/directives/sv-svet-social.js"></script>
+<script src="scripts/sections/home/directives/sv-home-main-news.js"></script>
+<script src="scripts/sections/home/directives/sv-news-sections-nav.js"></script>
+<script src="scripts/sections/home/services/NewsProcessServ.js"></script>
+<script src="scripts/sections/home/services/NewsServ.js"></script>
+
+<!-- sections.radio -->
+<script src="scripts/sections/radio/radioRoutes.js"></script>
+<script src="scripts/sections/radio/directives/sv-header-radio-btn.js"></script>
+<script src="scripts/sections/radio/controllers/RadioProgramCtrl.js"></script>
+<script src="scripts/sections/radio/services/RadioProgramsServ.js"></script>
+<script src="scripts/sections/radio/controllers/RadioArchiveCtrl.js"></script>
+<script src="scripts/sections/radio/radio-translation.js"></script>
+<script src="scripts/sections/radio/services/RadioServ.js"></script>
+<script src="scripts/sections/home/directives/sv-classified-header-phone.js"></script>
+<script src="scripts/sections/radio/directives/sv-radio-osa.js"></script>
+
+<!-- sections.widgets -->
+<script src="scripts/sections/widgets/widgetsRoutes.js"></script>
+<script src="scripts/sections/widgets/widgets-translation.js"></script>
+<script src="scripts/sections/widgets/directives/sv-weather-svet.js"></script>
+<script src="scripts/sections/widgets/filters/Celsius.js"></script>
+<script src="scripts/sections/widgets/services/WeatherServ.js"></script>
+<script src="bower_components/angular-easyfb/angular-easyfb.js"></script>
+
+<!-- endbuild -->
+
+<!-- inject:templates:js -->
+<!-- endinject -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-67624720-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

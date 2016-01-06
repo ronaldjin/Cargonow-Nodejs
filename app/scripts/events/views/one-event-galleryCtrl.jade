@@ -1,0 +1,15 @@
+div(layout='column')
+    div(layout='row' class='mr+ ml+' layout-align='space-between center')
+        button.btn.btn--s.btn--white.btn--raised(ng-click='goBackToGallery()')
+            i.fa.fa-arrow-left.fa-fw &nbsp
+            | {{'back'|translate}}
+
+        div(layout='row' class='mt' layout-align='end')
+            .mr
+                sv-fb-like
+            .mr
+                sv-fb-share
+            .mr
+                sv-google-share
+    sv-one-photo-gallery(active-img='activeImg')
+

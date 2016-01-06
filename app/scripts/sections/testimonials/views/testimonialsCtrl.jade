@@ -1,0 +1,18 @@
+div(layout='column' class='pl pr mb')
+    div.text-center.pl.pr
+        sv-profile-title(header-title="Testimonials")
+    md-divider.mt.mb
+    div(layout='row' class='mb ml mr')
+        .mr
+            sv-fb-like
+        .mr
+            sv-fb-share
+        .mr
+            sv-google-share
+    sv-open-dialog-btn(link-name="Add your feedback"
+    modal-method="showFeedbackModal()" btn-img-icon="img/common/feedback.png" img-width="22px" img-height="22px" ng-if='user.isManager() || user.isCustomer()')
+    div.text-center(class='mt+')
+        .sv-iframe-responsive-wrap
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/fuVyrMp3BpI', frameborder='0', allowfullscreen='')
+    sv-feedback-list(show-feedback-modal='showFeedbackModal()')
+    div

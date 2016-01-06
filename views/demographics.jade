@@ -1,0 +1,19 @@
+extends layout
+include mixins/menu/about-menu
+include mixins/demographics/demographics-tabs-content
+
+
+block content
+    div(class='p+')
+        h1 Demographics
+    div(class='mb+')
+        +about-menu
+    div(class='p+')
+        include ../app/scripts/sections/demographics/directives/sv-ru-demographics
+    div(class='p+')
+        include ../app/scripts/sections/demographics/directives/sv-top-ru-states
+    div(class='p+')
+        +demographics-tabs-content
+    div(class='p+')
+        include ../app/scripts/sections/about/directives/sv-top-ru-speaking
+

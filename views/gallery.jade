@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    a.btn.btn--xs.btn--grey.btn--flat.mt(href='/events/kohl2015' id="linkBack")
+        i.fa.fa-arrow-left.mr
+        | Back to Event
+    if vm !== undefine && vm.activeImg !== undefinedd
+        div.text-center
+            if vm.activeImg !== 0
+                a.btn.btn--m.btn--raised.btn--white.bgc-grey-300.m(href="/events/kohl2015/photo-gallery/#{parseInt(vm.activeImg)-1}")
+                    i.fa.fa-angle-left.fa-fw
+                    |PREVIOUS &nbsp&nbsp
+            if vm.activeImg !== vm.imgsCount-1
+                a.btn.btn--m.btn--raised.btn--white.bgc-grey-300.m(href="/events/kohl2015/photo-gallery/#{parseInt(vm.activeImg)+1}")
+                    | NEXT
+                    i.fa.fa-angle-right.fa-fw
+    ul.list-inline(class='row')
+        if vm !== undefined
+            if vm.activeImg === undefined
+                each photo,index in vm.files
+                    li.card.m.pr
+                        a(style='cursor:pointer;display:block;position:relative;overflow:hidden;width:170px;height:170px' href='#{photo.url}')
+                            img(style="display:block;position:relative" src='http://s3-us-west-2.amazonaws.com/kohl/#{photo.imgName}' width="100%")
+            else
+                li.card.m
+                    img(src='http://s3-us-west-2.amazonaws.com/kohl/#{(vm.files[vm.activeImg]).imgName}' width="100%")
+

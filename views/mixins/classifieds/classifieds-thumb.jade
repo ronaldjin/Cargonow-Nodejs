@@ -1,0 +1,20 @@
+mixin classifieds-thumb(cls)
+    ul.list-unstyled
+        for cl in cls
+            li
+                .card.mb
+                    div.p.bgc-grey-200(layout='row' layout-align='space-between center' )
+                        div(layout='row')
+                            if cl.city
+                                div.fs-caption !{cl.city}, &nbsp
+                            if cl.state
+                                div.fs-caption !{cl.state}
+                        div.fs-caption.tc-blue-grey-500 !{cl.section}
+                    div.p.sv-paper-elements-background
+                        div.fs-subhead.tc-grey-600 !{cl.title}
+                    div.p.bgc-grey-200(layout='row' layout-align='space-between center' )
+                        div.fs-caption !{cl.timestamp}
+                        a.btn.btn--xs.btn--white.tc-teal-500.bgc-grey-100.btn--raised.fs-caption(lx-ripple='' href='/classifieds/#{cl.section}/#{cl.id}/')
+                            i.fa.fa-eye.fa-fw &nbsp
+                            | More info
+

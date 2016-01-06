@@ -1,0 +1,14 @@
+extends layout
+include mixins/menu/classifieds-menu
+include mixins/classifieds/classifieds-thumb
+
+block content
+    div(class='p+')
+        h1 Classifieds
+    div(class='mb+')
+        if vm.sections
+            +classifieds-menu(vm.sections)
+    if vm.cls
+        div(class='mb+')
+            +classifieds-thumb(vm.cls)
+

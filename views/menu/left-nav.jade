@@ -1,0 +1,56 @@
+include ../mixins/events/event-ad
+div
+    ul.list-unstyled
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/')
+                i.mdi.mdi-home &nbsp
+                | Home
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/chicago/')
+                img(src="/img/icons/chicago1.png" style="display:inline-block; padding-right:6px; opacity:0.8" width="22")
+                |  Chicago
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/usa/')
+                img(src="/img/icons/usa.png" style="display:inline-block; padding-right:6px; opacity:0.8" width="22")
+                | USA
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/world/')
+                i.mdi.mdi-earth &nbsp
+                | World &nbsp News
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/business/')
+                i.mdi.mdi-briefcase &nbsp
+                | Business
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/technology/')
+                i.mdi.mdi-desktop-mac &nbsp
+                | Technology
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/art/')
+                i.mdi.mdi-palette &nbsp
+                | Showtime
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/sport/')
+                i.mdi.mdi-bike &nbsp
+                | Sport
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/restaurants/')
+                i.mdi.mdi-food-apple &nbsp
+                | Restaurants
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/health/')
+                i.mdi.mdi-food-apple &nbsp
+                | Health
+        li.mt.mb
+            a.btn.btn--m.btn--grey.btn-flat.tc-grey-800.text-left(style="width:100%" lx-ripple='' href='/sections/travel/')
+                i.mdi.mdi-wallet-travel &nbsp
+                | Travel
+
+    span.display-block.fs-title.mdc-underline-red.mdc-text-center.mt(class='mb+')
+        | Svet Family Event
+    +event-ad
+    ul.list-unstyled.pt.pr
+        li
+            a.btn.btn--s.btn--black.btn--raised.bgc-svet-700.m( style="width:100%" lx-ripple='' href='/radio-archive')
+                i.mdi.mdi-radio.fa-fw &nbsp
+                | Radio Archive

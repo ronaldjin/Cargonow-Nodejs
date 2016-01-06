@@ -1,0 +1,31 @@
+mixin one-classified(cl)
+    div(class='mb+')
+        sv-link-back
+    .card.mb
+        div.p.bgc-grey-200(layout='row' layout-align='space-between center' )
+            div.fs-title.tc-grey-700
+                i.fa.fa-bullhorn.fa-fw &nbsp
+                | Svet Classified
+            div.fs-caption.tc-blue-grey-500 !{cl.section}
+        div.p.sv-paper-elements-background(layout-sm='column' )
+            div(layout='row')
+                div
+                    div.fs-subhead.tc-grey-600 !{cl.title} &nbsp
+                    div.fs-body-2.tc-grey-50.bgc-red-300.label.label-default(style="padding:0px 4px") !{cl.price}
+                div.fs-body-2.tc-grey-600.ml !{cl.city}, !{cl.state}
+            div(layout='row')
+                div.fs-caption.tc-grey-600.mb !{cl.timestamp}
+            div(layout='row')
+                div.fs-body-1!{cl.description}
+        div.p.bgc-grey-200(layout='row' layout-align='space-between center' )
+            if cl.name
+                div.fs-caption Contact: &nbsp
+                    strong !{cl.name}
+            if cl.phone
+                div.fs-caption Phone: &nbsp
+                    strong !{cl.phone}
+            if cl.email
+                div.fs-caption Email: &nbsp
+                    strong !{cl.email}
+
+
